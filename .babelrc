@@ -2,6 +2,7 @@
   "presets": ["react-app"],
   "plugins": [
     ["react-hot-loader/babel", "syntax-dynamic-import", "lodash"],
-    ["import", { "libraryName": "antd", "libraryDirectory": "es", "style": "css" }] // `style: true` 会加载 less 文件
+    "transform-es2015-modules-commonjs",
+    ["import", { "libraryName": "antd", "style": "css" }] // `style: true` 会加载 less 文件
   ]
 }
